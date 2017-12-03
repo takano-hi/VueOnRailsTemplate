@@ -1,24 +1,21 @@
-# README
+# Vue on Rails Template
+- This is a package to use Vue.js on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Version
+- Ruby 2.4.1
+- Rails 5.1.4
+- Vue 2.5.9
+- Vuex 3.0.1
+- vue-router 3.0.1
 
-Things you may want to cover:
+## Files to modify
+- config/application.rb - module name
+- config/database.yml - database name
+- config/cable.yml - channel_prefix
 
-* Ruby version
+## How to start
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```console
+$ foreman start
+```
+- and access `localhost:3000`
