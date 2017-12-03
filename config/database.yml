@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password:
+  host: localhost
+
+development:
+  <<: *default
+  database: vue-on-rails-template-dev
+
+test:
+  <<: *default
+  database: vue-on-rails-template-test
+
+production:
+  <<: *default
+  database: vue-on-rails-template-production
+  username: vue-on-rails-template
+  password: <%= ENV['VUE_ON_RAILS_TEMPLATE_DATABASE_PASSWORD'] %>
