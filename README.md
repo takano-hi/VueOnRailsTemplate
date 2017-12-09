@@ -8,7 +8,7 @@
 - Vuex 3.0.1
 - vue-router 3.0.1
 
-## Files to modify
+## Files to modify application name
 - config/application.rb - module name
 - config/database.yml - database name
 - config/cable.yml - channel_prefix
@@ -16,6 +16,8 @@
 ## How to start
 
 ```console
-$ foreman start
+$ bundle install
+$ npm install
+$ npm start
 ```
 - and access `localhost:3000`

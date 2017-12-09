@@ -1,6 +1,9 @@
 {
   "name": "VueOnRailsTemplate",
   "private": true,
+  "scripts": {
+    "start": "foreman start"
+  },
   "dependencies": {
     "@rails/webpacker": "^3.0.2",
     "axios": "^0.17.1",
